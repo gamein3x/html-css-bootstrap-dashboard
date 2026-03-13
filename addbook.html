@@ -24,7 +24,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark border-bottom border-body">
             <div class="container-fluid">
-                <img src="img/duckglasses.png" alt="logo" height="64" widtd="64">
+                <img src="img/duckglasses.png" alt="logo" height="64" width="64">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -59,30 +59,42 @@
                 <h1 class="h1">Nuovo Libro</h1>
             </div>
         </div>
-        <form class=>
+        <form>
             <div class="row">
                 <div class="mb-3 col-6">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    <label for="autornome" class="form-label">Nome Autore</label>
+                    <input type="text" class="form-control" id="autornome" placeholder="Inserisci il nome dell'autore">
                 </div>
                 <div class="mb-3 col-6">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label for="autorcognome" class="form-label">Cognome Autore</label>
+                    <input type="text" class="form-control" id="autorcognome"
+                        placeholder="Inserisci il cognome dell'autore">
                 </div>
-                <div class="row">
-                    <div class="col-12 col-lg-4">col-lg-4</div>
-                    <div class="col-12 col-lg-4">col-lg-4</div>
-                    <div class="col-12 col-lg-4">col-lg-4</div>
+                <div class="mb-3 col-12">
+                    <label for="titololibro" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" id="titololibro" aria-describedby="titololibroHelp"
+                        placeholder="Inserisci il titolo del libro">
+                    <div id="titololibroHelp" class="form-text">Titolo versione italiana</div>
                 </div>
-                <div class="row">
-                    <div class="mb-3 form-check col-12">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <div class="col">
+            </div>
+            <div class="row">
+                <div class="mb-3 col-12 col-lg-4">col-lg-4</div>
+                <div class="mb-3 col-12 col-lg-4">
+                    <label for="pubanno" class="form-label">Anno di Pubblicazione</label>
+                    <input type="text" class="form-control" id="pubanno" placeholder="Inserisci l'anno">
+                </div>
+                <div class="mb-3 col-12 col-lg-4">
+                    <label for="isbncode" class="form-label">ISBN#</label>
+                    <input type="text" class="form-control" id="isbncode" placeholder="Inserisci il codice ISBN#">
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 form-check col-12">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <div class="mb-3 ml-3 col">
                     <button type="submit" class="btn btn-primary w-25">Submit</button>
-                    </div>
                 </div>
             </div>
         </form>
