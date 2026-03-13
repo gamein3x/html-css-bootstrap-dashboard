@@ -55,7 +55,7 @@
     </header>
     <main class="container mt-4">
         <div class="row">
-            <div class="col-12">
+            <div class="col-6">
                 <h1 class="h1">Nuovo Libro</h1>
             </div>
         </div>
@@ -78,7 +78,19 @@
                 </div>
             </div>
             <div class="row">
-                <div class="mb-3 col-12 col-lg-4">col-lg-4</div>
+                <div class="mb-3 col-12 col-lg-4">
+                    <label for="genderlist" class="form-label">Genere</label>
+                    <select class="form-select" aria-label="Default select example" id="genderlist">
+                        <option selected>Scegli il genere</option>
+                        <option value="1">Donna</option>
+                        <option value="2">Uomo</option>
+                        <option value="3">Preferisco non rispondere</option>
+                        <option value="4">Perchè non me lo dici tu?</option>
+                        <option value="5">E poi magari fatti i fatti tuoi</option>
+                        <option value="6">...</option>
+                        <option value="7">Granchio</option>
+                    </select>
+                </div>
                 <div class="mb-3 col-12 col-lg-4">
                     <label for="pubanno" class="form-label">Anno di Pubblicazione</label>
                     <input type="text" class="form-control" id="pubanno" placeholder="Inserisci l'anno">
@@ -89,12 +101,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="mb-3 form-check col-12">
+                <div class="mb-4 form-check col-12 mx-3">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <label class="form-check-label" for="exampleCheck1">Disponibile anche in digitale</label>
                 </div>
                 <div class="mb-3 ml-3 col">
-                    <button type="submit" class="btn btn-primary w-25">Submit</button>
+                    <button type="submit" class="btn btn-primary w-25">Aggiungi Libro</button>
                 </div>
             </div>
         </form>
