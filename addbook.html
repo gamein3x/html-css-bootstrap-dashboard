@@ -66,16 +66,16 @@
             <div class="row">
                 <div class="mb-3 col-6">
                     <label for="autornome" class="form-label">Nome Autore</label>
-                    <input type="text" class="form-control" id="autornome" placeholder="Inserisci il nome dell'autore">
+                    <input required type="text" class="form-control" id="autornome" placeholder="Inserisci il nome dell'autore">
                 </div>
                 <div class="mb-3 col-6">
                     <label for="autorcognome" class="form-label">Cognome Autore</label>
-                    <input type="text" class="form-control" id="autorcognome"
+                    <input required type="text" class="form-control" id="autorcognome"
                         placeholder="Inserisci il cognome dell'autore">
                 </div>
                 <div class="mb-3 col-12">
                     <label for="titololibro" class="form-label">Titolo</label>
-                    <input type="text" class="form-control" id="titololibro" aria-describedby="titololibroHelp"
+                    <input required type="text" class="form-control" id="titololibro" aria-describedby="titololibroHelp"
                         placeholder="Inserisci il titolo del libro">
                     <div id="titololibroHelp" class="form-text">Titolo versione italiana</div>
                 </div>
@@ -83,8 +83,8 @@
             <div class="row">
                 <div class="mb-3 col-12 col-lg-4">
                     <label for="genderlist" class="form-label">Genere</label>
-                    <select class="form-select" aria-label="Default select example" id="genderlist">
-                        <option selected>Scegli il genere</option>
+                    <select required class="form-select" aria-label="Default select example" id="genderlist">
+                        <option selected disabled value="">Scegli il genere</option>
                         <option value="1">Donna</option>
                         <option value="2">Uomo</option>
                         <option value="3">Preferisco non rispondere</option>
@@ -96,15 +96,15 @@
                 </div>
                 <div class="mb-3 col-12 col-lg-4">
                     <label for="pubanno" class="form-label">Anno di Pubblicazione</label>
-                    <input type="text" class="form-control" id="pubanno" placeholder="Inserisci l'anno">
+                    <input required type="number" min="1900" class="form-control" id="pubanno" placeholder="Inserisci l'anno">
                 </div>
                 <div class="mb-3 col-12 col-lg-4">
                     <label for="isbncode" class="form-label">ISBN#</label>
-                    <input type="text" class="form-control" id="isbncode" placeholder="Inserisci il codice ISBN#">
+                    <input required type="text" pattern="[A-Za-z]{3}" class="form-control" id="isbncode" placeholder="Inserisci il codice ISBN#">
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 mb-3">
+                <div class="col-12 my-4">
                     <hr class="col-12">
                 </div>
                 <div class="col mb-2">
